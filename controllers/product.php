@@ -25,7 +25,7 @@ class ProductController {
 
         $model->id_prod = $_POST['id_prod'];
         $model->nm_prod = $_POST['nm_prod'];
-        $model->price = $_POST['price'];
+        $model->price = str_replace(',', '.', $_POST['price']);
         $model->id_forn = $_POST['id_forn'];
 
         $model->save();

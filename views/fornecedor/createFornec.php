@@ -51,10 +51,10 @@
         <input type="text" name="nm_forn" value="<?= $model->nm_forn ?>" id="nm_forn">
 
         <label for="cnpj">CNPJ</label>
-        <input type="text" name="cnpj" value="<?= $model->cnpj ?>" id="cnpj">
+        <input type="text" name="cnpj" value="<?= $model->cnpj ?>" id="cnpj" maxlength="14">
 
         <label for="UF">UF</label>
-        <input type="text" name="UF" value="<?= $model->UF ?>" id="UF">
+        <input type="text" name="UF" value="<?= $model->UF ?>" id="UF" >
 
         <button type="submit">Salvar</button>
     </form>

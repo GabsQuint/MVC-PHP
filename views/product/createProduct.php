@@ -51,7 +51,7 @@
         <input type="text" name="nm_prod" value="<?= $model->nm_prod ?>" id="nm_prod">
 
         <label for="price">Preço</label>
-        <input type="text" name="price" value="<?= $model->price ?>" id="price">
+        <input type="text" name="price" value="<?=  str_replace('.', ',', $model->price) ?>" id="price">
 
         <label for="id_forn">Fornecedor</label>
         <input type="number" name="id_forn" value="<?= $model->id_forn ?>" id="id_forn">

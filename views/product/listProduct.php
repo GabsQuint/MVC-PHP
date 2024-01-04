@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Products</title>
+    <title>Produtos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,7 +66,7 @@
 
 <body>
     <div class="container">
-        <h1>List of Products</h1>
+        <h1>Lista de produtos</h1>
         <a href="/produto/form" class="button">Adicionar produto</a>
         <a href="/" class="button">Pagina inicial</a>
         <table>
@@ -84,7 +84,7 @@
                     <td>
                         <a href="/produto/form?id=<?= $row->id_prod ?>"><?= $row->nm_prod ?></a>
                     </td>
-                    <td><?= $row->price ?></td>
+                    <td><?=  str_replace('.', ',', $row->price) ?></td>
                     <td><?= $row->nm_forn ?></td>
                 </tr>
             <?php endforeach; ?>

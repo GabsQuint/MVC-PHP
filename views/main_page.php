@@ -34,7 +34,7 @@
 </head>
 <body>
     <div>
-        <h1>Main Page</h1>
+        <h1>Pagina inicial</h1>
         <button onclick="window.location.href='produto'">Produtos</button>
         <button onclick="window.location.href='fornecedor'">Fornecedores</button>
     </div>
